@@ -1,0 +1,182 @@
+@font-face { 
+    font-family: "Belwe"; 
+    src: url("fonts/hearthstone_font.ttf") format('truetype'); 
+    }
+
+body {
+    background-image: url("img/background.jpg");
+    background-repeat: repeat;
+    font-family: Belwe;
+    text-align: center;
+}
+
+#header > img {
+    width: 100%;
+}
+
+.centered {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.headline {
+    margin-top: 50px;
+}
+
+.headline::after {
+    content: "";
+    display: block;
+    position: relative;
+    background: url(img/headline_under.png) 50% no-repeat;
+        background-size: auto;
+    background-size: contain;
+    width: auto;
+    height: 61px;
+}
+
+.headline::before {
+    background: url("img/background_header_before.png");
+}
+
+.scrollable_div {
+    height: 1300px;
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+.background_opaque {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.rounded_corners_top {
+    border-radius: 15px 15px 0px 0px;
+}
+
+.rounded_corners_bottom {
+    border-radius: 0px 0px 15px 15px;
+}
+
+#table_games {
+    width: 100%;
+    font-size: large;
+}
+
+#table_games tr {
+    height: 50px;
+}
+
+.platz_low {
+    background: url("img/brackground_platzierung_3.png") no-repeat;
+    background-position: center;
+    background-size: auto;
+    color: aliceblue;
+    font-weight: bold;
+    text-shadow: #000 2px 0 0,#000 1.75517px .95885px 0,#000 1.0806px 1.68294px 0,#000 .14147px 1.99499px 0,#000 -.83229px 1.81859px 0,#000 -1.60229px 1.19694px 0,#000 -1.97998px .28224px 0,#000 -1.87291px -.70157px 0,#000 -1.30729px -1.5136px 0,#000 -.42159px -1.95506px 0,#000 .56732px -1.91785px 0,#000 1.41734px -1.41108px 0,#000 1.92034px -.55883px 0;
+}
+
+.platz_mid {
+    background: url("img/brackground_platzierung_2.png") no-repeat;
+    background-position: center;
+    color: aliceblue;
+    font-weight: bold;
+    text-shadow: #000 2px 0 0,#000 1.75517px .95885px 0,#000 1.0806px 1.68294px 0,#000 .14147px 1.99499px 0,#000 -.83229px 1.81859px 0,#000 -1.60229px 1.19694px 0,#000 -1.97998px .28224px 0,#000 -1.87291px -.70157px 0,#000 -1.30729px -1.5136px 0,#000 -.42159px -1.95506px 0,#000 .56732px -1.91785px 0,#000 1.41734px -1.41108px 0,#000 1.92034px -.55883px 0;
+}
+
+.platz_high {
+    background: url("img/brackground_platzierung.png") no-repeat;
+    background-position: center;
+    color: aliceblue;
+    font-weight: bold;
+    text-shadow: #000 2px 0 0,#000 1.75517px .95885px 0,#000 1.0806px 1.68294px 0,#000 .14147px 1.99499px 0,#000 -.83229px 1.81859px 0,#000 -1.60229px 1.19694px 0,#000 -1.97998px .28224px 0,#000 -1.87291px -.70157px 0,#000 -1.30729px -1.5136px 0,#000 -.42159px -1.95506px 0,#000 .56732px -1.91785px 0,#000 1.41734px -1.41108px 0,#000 1.92034px -.55883px 0;
+}
+
+.platz_low_ranks {
+    background: url("img/brackground_platzierung_3.png") no-repeat;
+    background-position: center;
+    background-size: 32px;
+    color: aliceblue;
+    font-weight: bold;
+    text-shadow: #000 2px 0 0,#000 1.75517px .95885px 0,#000 1.0806px 1.68294px 0,#000 .14147px 1.99499px 0,#000 -.83229px 1.81859px 0,#000 -1.60229px 1.19694px 0,#000 -1.97998px .28224px 0,#000 -1.87291px -.70157px 0,#000 -1.30729px -1.5136px 0,#000 -.42159px -1.95506px 0,#000 .56732px -1.91785px 0,#000 1.41734px -1.41108px 0,#000 1.92034px -.55883px 0;
+}
+
+.platz_mid_ranks {
+    background: url("img/brackground_platzierung_2.png") no-repeat;
+    background-position: center;
+    background-size: 32px;
+    color: aliceblue;
+    font-weight: bold;
+    text-shadow: #000 2px 0 0,#000 1.75517px .95885px 0,#000 1.0806px 1.68294px 0,#000 .14147px 1.99499px 0,#000 -.83229px 1.81859px 0,#000 -1.60229px 1.19694px 0,#000 -1.97998px .28224px 0,#000 -1.87291px -.70157px 0,#000 -1.30729px -1.5136px 0,#000 -.42159px -1.95506px 0,#000 .56732px -1.91785px 0,#000 1.41734px -1.41108px 0,#000 1.92034px -.55883px 0;
+}
+
+.platz_high_ranks {
+    background: url("img/brackground_platzierung.png") no-repeat;
+    background-position: center;
+    background-size: 32px;
+    color: aliceblue;
+    font-weight: bold;
+    text-shadow: #000 2px 0 0,#000 1.75517px .95885px 0,#000 1.0806px 1.68294px 0,#000 .14147px 1.99499px 0,#000 -.83229px 1.81859px 0,#000 -1.60229px 1.19694px 0,#000 -1.97998px .28224px 0,#000 -1.87291px -.70157px 0,#000 -1.30729px -1.5136px 0,#000 -.42159px -1.95506px 0,#000 .56732px -1.91785px 0,#000 1.41734px -1.41108px 0,#000 1.92034px -.55883px 0;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    position: sticky;
+    top: 0px;
+    background-image: url("img/background.jpg");
+  }
+
+table tr {
+    border-top: 1px solid #caae85;
+}
+
+table tr:nth-child(2n) {
+    background: rgba(97,67,38,.1);
+}
+
+.google-visualization-tooltip { 
+    width:150px;
+}
+
+.hero_img > img {
+    height: 180px;
+}
+
+.button {
+    width: 100px;
+    height: 31px;
+    background: url("img/background_button.png") repeat-x 50%;
+    font-size: 19px;
+    color: #e9d2a7;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.button.active {
+    color: white;
+}
+
+.button::before {
+    background: url("img/background_button_before.png") no-repeat 50%;
+    content: "";
+    display: block;
+    position: absolute;
+    top: -8px;
+    width: 30px;
+    height: 46px;
+    left: 16px;
+    background-size: contain;
+}
+
+.button::after {
+    background: url("img/background_button_after.png") no-repeat 50%;
+    content: "";
+    display: block;
+    position: absolute;
+    top: -8px;
+    width: 30px;
+    height: 46px;
+    right: 16px;
+    background-size: contain;
+}

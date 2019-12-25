@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+        <!-- Site Stylesheet -->
+        <link rel="stylesheet" href="main.css">
+
+        <title>Hearthstone Battlegrounds</title>
+    </head>
+    <body>
+        <div id="header">
+            <img src="img/header_hearthstone.jpg">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col centered headline">
+                        <h2>Punkteverlauf</h2>
+                        Der Punkteverlauf im Laufe der Zeit. Mit Datum, Gesamt MMR, Differenz, Platz und verwendetem Hero.
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div id="div_linechart_punkte"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col centered headline">
+                        <h2>Platzierungen</h2>
+                        Die Platzierungen im Laufe der Zeit. Mit Datum, Gesamt MMR, Differenz, Platz und verwendetem Hero.
+                </div>
+            </div>
+            <div class="row">
+                <div id="div_table_games" class="col centered scrollable_div">
+                    <table id="table_games">
+                        <thead>
+                            <th>Datum</th><th>Nr.</th><th>Punkte</th><th>Differenz</th><th>Platz</th><th>Hero</th>
+                        </thead>
+                        <tbody></tbody>                       
+                    </table>
+                </div>
+                <div class="col">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                    <div class="headline">
+                                        <h3>Plazierungsverlauf</h3>
+                                    </div>
+                                <div id="div_linechart_platzierungen"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="headline">
+                                    <h3>Anzahl der Platzierungen</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div id="div_table_platzierungen">
+                                    <table id="table_platzierungen">
+                                        <thead>
+                                            <th>Platz</th><th>Anzahl</th>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div id="div_columnchart_platzierungen"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col centered headline">
+                        <h2>Heroes</h2>
+                        Die benutzen Heros. Absteigend sortiert nach Spiel-Häufigkeit
+                </div>
+            </div>
+            <div class="row">
+                <div class="col centered sort_buttons">
+                    <div id="button_hero_spiele" class="button active">Spiele</div>
+                </div>
+                <div class="col centered sort_buttons">
+                    <div id="button_hero_punkte" class="button">Punkte</div>
+                </div>
+                <div class="col centered sort_buttons">
+                    <div id="button_hero_top2ins" class="button">Top2 Ins.</div>
+                </div>
+                <div class="col centered sort_buttons">
+                    <div id="button_hero_top2prozent" class="button">Top2 %</div>
+                </div>
+                <div class="col text-center sort_buttons">
+                    <div id="button_hero_top4ins" class="button">Top4 Ins.</div>
+                </div>
+                <div class="col centered sort_buttons">
+                    <div id="button_hero_top4prozent" class="button">Top4 %</div>
+                </div>
+                
+            </div>
+            <div id="heroes_placeholder"></div>
+        </div>
+ 
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
